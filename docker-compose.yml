@@ -1,17 +1,6 @@
 version: "3.8"
 
 services:
-  console:
-    container_name: client
-    build: ./wiptips
-    ports:
-      - 3000:3000
-  api:
-    container_name: api
-    build: ./api
-    ports:
-      - 5000:3000
-
   nginx:
     container_name: nginx
     build: ./nginx
